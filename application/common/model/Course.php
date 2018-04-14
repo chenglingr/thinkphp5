@@ -9,4 +9,8 @@ class Course extends Model{
 		return $this->order($order)
 					->paginate(1);
 	}
+	public function add($data){
+		$this->save($data);
+		return $this->id;
+	}
 }
