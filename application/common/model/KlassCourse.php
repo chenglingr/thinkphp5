@@ -22,7 +22,7 @@ class KlassCourse extends Model{
 	public function Klass(){
 		return $this->belongsTo('Klass');
 	}
-		public function Course(){
+	public function Course(){
 		return $this->belongsTo('Course');
 	}
 }

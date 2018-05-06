@@ -10,6 +10,7 @@ class KlasscourseController extends Controller{
 		$this->assign('kcs',$kcs);
 		return $this->fetch();
 	}
+	
 	public function add()
 	{
 		$courses=model('Course')->getAllCourseSelect();
